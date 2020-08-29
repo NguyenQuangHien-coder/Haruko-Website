@@ -17,7 +17,6 @@ html {
 .main-module {
   background: #FFFFFF;
   margin-bottom: 10px;
-  border-radius: 2px;
 }
 
 /* HEADER -------------------------------------------------------------------------------------*/
@@ -29,7 +28,11 @@ html {
   align-items: center;
   background: #03A9F4;
   color: whitesmoke;
-  border-radius: 2px;
+}
+
+.nav__top-logo {
+  font-weight: bolder;
+  font-size: 20px;
 }
 
 /* SEARCHBAR */
@@ -41,10 +44,9 @@ html {
 .nav__bottom-list-item ul {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   background: #0288D1;
-  border-radius: 2px;
 }
 
 .nav__bottom-list-item ul li {
@@ -57,5 +59,60 @@ html {
 }
 
 .nav__bottom-list-item ul li a:hover {
-  background-color: #03A9F4;
+  background: #5ec0ee;
+  color: white;
+}
+
+/* MAIN -------------------------------------------------------------------------------------*/
+/*MAIN-CAROUSEL*/
+.main__carousel {
+  padding-left: 0;
+  padding-right: 0;
+}
+.main__carousel img {
+  max-height: 300px;
+}
+
+.main__carousel-targer {
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 100% !important;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.carousel:hover .carousel-control-prev {
+  visibility: visible;
+  opacity: 1;
+}
+
+.carousel:hover .carousel-control-next {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*MAIN-HOT-ITEM*/
+.main__hot-item h2 {
+  font-size: 16px;
+  width: 200px;
+  height: 30px;
+  padding-left: 10px;
+  color: whitesmoke;
+  background: #d35c2d;
+  border-right: 12px solid #ffffff;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  display: flex;
+  align-items: center;
+}
+
+.main__hot-item img {
+  display: inline-block;
+  max-width: 49%;
+  margin-top: 30px;
 }
