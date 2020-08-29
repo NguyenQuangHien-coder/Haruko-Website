@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+a{
+    background-color: transparent;
+    color: #1f2129;
+    text-decoration: none;
+}
+
+div {
+    display: block;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 600;
+    margin: 0;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+button, input, select, textarea {
+    font: inherit;
+    margin: 0;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+/* Header */
+#header {
+    background: #fff;
+    margin-bottom: 10px;
+}
+
+#header-top {
+    width: 73%;
+    margin: 0 auto;
+}
+
+#header-top>div{
+    padding:10px;
+}
+
+a.logo{
+    font-size: 15px;
+    position: absolute;
+    top: 0;
+    padding-top: 35px;
+    z-index: 1;
+    color: #ff4500;
+    font-weight: 600;
+    background-size: 100%;
+    background: url(../img/logo.png) no-repeat;
+}
+
+#Searchbar{
+    white-space: nowrap;
+}
+
+#Searchbar form{
+    position: relative;
+}
+
+#Searchbar input{
+    width: 85%;
+    height: 35px;
+    font-size: 15px;
+    padding: 5px 10px;
+    border: 1px solid #f1f1f1;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.search-button {
+    background: #f1f1f1;
+    color: #444;
+    width: 15%;
+    height: 35px;
+    font-size: 16px;
+    padding: 1px 12px;
+    position: relative;
+}
+
+.search-button i{
+    margin: 10px;
+}
+
+#Loginbtn a{
+    background: linear-gradient(to bottom,#fff,#eee) repeat scroll 0 0 #fff;
+    color: #999;
+    border: 1px solid #e5e6e9;
+    border-radius: 30px;
+}
+
+#Loginbtn .btn{
+    border: none;
+    display: inline-block;
+    outline: 0;
+    padding: 6px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none!important;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+#header-bottom {
+    background: #4267b2;
+    width: 100%;
+}
+
+ul.topnav {
+    list-style-type: none;
+    overflow: hidden;
+    width: 75%;
+    margin: 0 auto;
+    padding: 0 2px;
+}
+
+ul.topnav li{
+    float: left;
+}
+
+ul.topnav li a{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    transition: .3s;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 9px 12px;
+    border-right: 1px solid rgba(0,0,0,.1);
+}
