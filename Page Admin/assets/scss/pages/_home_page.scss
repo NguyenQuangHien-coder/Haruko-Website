@@ -1,0 +1,19 @@
+.main-category__wrap
+{
+    .table
+    {
+        tbody
+        {
+            a 
+            {
+                color: black;
+                transition: 0.3s;
+                &:hover 
+                {
+                    color: $color--red;
+                    transform: scale(1.5);
+                }
+            }
+        }
+    }
+}

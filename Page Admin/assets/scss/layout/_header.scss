@@ -1,0 +1,239 @@
+/* HEADER -------------------------------------------------------------------------------------*/
+/* TOP */
+.container-fluid 
+{
+  padding: 0 !important;
+}
+.header__background
+{
+  width: 100%;
+    position: fixed;
+    z-index: 99;
+    height: 100px;
+    padding-top: 0 !important;
+    opacity: 90%;
+   
+    background-image: linear-gradient(to top, $color--dark-grey 50%, $color--light-grey 50%);
+    background-repeat: repeat-y;
+    margin-bottom: 10px;
+}
+
+.container--header
+{
+  width: 100%;
+  height: 100px;
+}
+.nav__top-list-item {
+  height: 50%;
+  display: flex;
+  flex-wrap: nowrap !important;
+  justify-content: space-between;
+  align-items: center;
+  background: $color--light-grey;
+  color: whitesmoke;
+}
+
+.nav__top-logo {
+  // font-weight: bolder;
+  // font-size: 20px;
+ 
+
+  a {
+      padding-left: 15px;
+    color: whitesmoke !important;
+    width: 50px;
+    height: 50px;
+    img 
+    {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+
+/* SEARCHBAR */
+// .nav__top-searchbar
+// {
+//   .fa-search
+//   {
+//     color: $color--dark-grey;
+//     transition: 0.3s;
+//     &:hover
+//     {
+//       transform: scale(1.1);
+//     }
+//   }
+// }
+
+/*USER*/
+.nav__top-signin {
+  padding-left: 0;
+  padding-right: 0;
+//   display: flex;
+//   align-items: center;
+  a.user-display {
+    color: whitesmoke;
+    float: right;
+    white-space: nowrap !important;
+    transition: 0.3s;
+    .fa-shopping-cart {
+      font-size: 20px;
+      margin: 0 20px;
+    }
+    .admin-name 
+      {
+          overflow: hidden !important;
+          text-overflow: ellipsis !important;
+          white-space: nowrap !important;
+          transition: 0.3s;
+          &:hover {
+            transform: scale(1.1);
+            color: $color--red;
+          }
+      }
+    .fa-user {
+      font-size: 20px;
+      margin: 0 20px;
+      transition: 0.3s;
+    }
+  }
+}
+/* BOTTOM */
+//TODO: NEW: HEADER ATTRIBUTE
+.nav-bot
+{
+  position: relative;
+  z-index: 1;
+  padding: 0 !important;
+  background: rgba($color--dark-grey, $alpha: 0.5) !important;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  .fa-bars
+  {
+    &:hover 
+    {
+      color: $color--red;
+    }
+  }
+}
+.navbar-toggler 
+{
+  margin-top: 5px;
+  outline: none !important;
+  .fa-bars
+  {
+    font-size: 30px;
+    color: whitesmoke;
+  }
+}
+ul.navbar-nav 
+{
+  width: 100%;
+  display: flex;
+  margin: 0;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: rgba($color--dark-grey, $alpha: 0.5);
+  li.nav-item
+  {
+      display: flex;
+      text-align: center;
+      flex-wrap: wrap;
+      flex: 1;
+    a.nav-link
+    {
+      color: $color--whitesmoke;
+      padding: 13px 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 2px;
+      transition: 0.3s;
+      &:hover
+      {
+        color: $color--white;
+        background: rgba($color: $color--red, $alpha: 0.5);
+        transform: scale(1.02);
+      }
+    }
+  }
+}
+/*USER-MODE*/ 
+.container--header
+{
+    .nav__top-signin
+    {
+      .dropbtn {
+        background: transparent;
+        border-radius: 100%;
+        color: white;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+      .dropdown {
+        img 
+        {
+          width: 30px;
+          height: 30px;
+        }
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        left: -25px;
+        background-color: $color--siver;
+        font-size: 12px;
+        min-width: 80px;
+        border-radius: 10px;
+        margin-top: 5px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        opacity: 90%;
+        transition: 0.3s;
+        z-index: 99999;
+        a{
+          color: $color--red;
+          padding: 5px;
+          text-decoration: none;
+          display: block;
+        }
+      }
+      .show {display: block;}
+    }
+}
+/*RESPONSIVE NAV-LOGO*/
+@media only screen and (max-width: 600px)
+{
+  .container--header
+  {
+    width: 100%;
+  }
+  .nav__top-list-item
+  {
+      margin: 0 5px;
+    .nav__top-logo
+    {
+      padding-right: 0;
+    }
+  }
+}
+/*RESPNSIVE NAV-ICON*/ 
+// @media only screen and (max-width: 1000px)
+// {
+//   .nav__top-list-item
+//   {
+//       margin: 0 5px;
+//     .nav__top-signin
+//     {
+//       .fa-shopping-cart,
+//       .fa-user
+//       {
+//         margin: 0 10px !important;
+//       }
+//     }
+//   }
+// }

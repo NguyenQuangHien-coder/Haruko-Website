@@ -1,0 +1,123 @@
+$color--white: #ffffff;
+$color--whitesmoke: #f2f2f2;
+$color--siver: #e0e0e0;
+$color--light-grey: #374046;
+$color--dark-grey: #171c24;
+$color--soft-black: #141414;
+$color--red: #D32F2F;
+    
+.special-product
+{
+    padding: 0;
+    .item  
+    {
+        margin-bottom: 10px;
+    } 
+    .owl-carousel 
+    {
+        .owl-dots
+        {
+            display: none;
+        }
+        .owl-nav
+        {
+            margin: 0;
+            display: block !important;
+            .owl-prev
+            {
+                position: absolute;
+                top: 15%;
+                left: 20px;
+                width: 40px;
+                height: 150px;
+                font-size: 50px;
+                background: transparent !important;
+                background: rgba($color: #c4c4c4, $alpha: 0.3) !important;
+                border: none !important;
+                &:visited
+                {
+                    border: none !important;
+                    outline: none !important;
+                }
+                span 
+                {
+                    color: whitesmoke;
+                }
+            }
+            .owl-next
+            {
+                position: absolute;
+                top: 15%;
+                right: 20px;
+                width: 40px;
+                height: 150px;
+                font-size: 50px;
+                background: transparent !important;
+                background: rgba($color: #c4c4c4, $alpha: 0.3) !important;
+                border: none !important;
+                &:active
+                {
+                    border: none !important;
+                    outline: none !important;
+                }
+                span 
+                {
+                    color: whitesmoke;
+                }
+            }
+        }
+    }
+}
+.special-product 
+{
+    .card 
+    {
+        border: none;
+        height: 215px;
+        margin: 10px 0;
+        // background: rgba($color: #f2f2f2, $alpha: 0.05);
+        background: transparent;
+        img 
+        {
+            // height: 148px;
+            padding: 0;
+            // height: 149.281px;
+            height: 170px;
+            background-size: cover;
+            border-radius: 20px;
+            transition: 0.3s;
+            &:hover 
+            {
+                transform: translate(0px, -10px); 
+            }
+        }
+        .card-body
+        {
+            padding: 0;
+            h3 
+            {
+                font-size: 16px;
+                margin-bottom: 5px;
+                color: $color--whitesmoke;
+            }
+            p 
+            {
+                font-size: 12px;
+                margin: 0 5px;
+            }
+        }
+    }
+}
+.special-product
+{
+   .special-product__main-module
+   {
+    
+    background: rgba($color: #f2f2f2, $alpha: 0.1);
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border-radius: 20px;
+   }
+}
+
+

@@ -1,0 +1,17 @@
+.footer__wrap 
+{
+    height: 50px;
+    margin-top: auto;
+    background: #171c24;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .footer__title
+    {
+        p 
+        {
+            color: $color--whitesmoke;
+            margin: 0;
+        }
+    }
+}

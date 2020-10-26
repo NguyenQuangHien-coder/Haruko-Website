@@ -1,0 +1,118 @@
+$color--white: #ffffff;
+$color--whitesmoke: #f2f2f2;
+$color--siver: #e0e0e0;
+$color--light-grey: #374046;
+$color--dark-grey: #171c24;
+$color--soft-black: #141414;
+$color--red: #D32F2F;
+$color--bright-red: #e2192d;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    list-style: none !important;
+    text-decoration: none !important;
+}
+body
+{
+    background: $color--soft-black;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+html
+{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.main-container
+{
+    padding-top: 110px;
+}
+.main-module
+{
+    background: $color--siver;
+    margin-bottom: 10px ;
+    border-radius: 10px;
+}
+h1 
+{
+    font-size: 25px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+h2 
+{
+  font-size: 16px;
+}
+h4 
+{
+    font-size: 12px;
+}
+.product-title 
+{
+    border-bottom: 1px solid rgba($color: gray, $alpha: 0.5);
+}
+/*5 CỘT*/
+.col-2dot4, // extra small
+.col-sm-2dot4, // small
+.col-md-2dot4, // medium
+.col-lg-2dot4, // large
+.col-xl-2dot4 { // extra large
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.col-2dot4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+@media (min-width: 540px) {
+    .col-sm-2dot4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+@media (min-width: 720px) {
+    .col-md-2dot4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+@media (min-width: 960px) {
+    .col-lg-2dot4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+@media (min-width: 1140px) {
+    .col-xl-2dot4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+/* HEADER -------------------------------------------------------------------------------------*/
+/* MAIN -------------------------------------------------------------------------------------*/
+/*MAIN-CAROUSEL*/
+/*MAIN-HOT-ITEM*/
+/*MAIN-CARD*/
+/*MAIN-PRODUCT*/
+/*MAIN-SALE-PRODUCT*/
+/*SEEMORE-PRODUCT and SALE-PRODUCT*/
+/* SCROLL TO TOP ----------------------------------------------------------------------------*/

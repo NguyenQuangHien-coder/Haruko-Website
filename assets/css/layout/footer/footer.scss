@@ -1,0 +1,91 @@
+$color--light-grey: #374046;
+$color--dark-grey: #171c24;
+$color--red: #D32F2F;
+$color--whitesmoke: #f5f5f5;
+
+footer 
+{
+    margin-top: auto;
+    background: $color--dark-grey;
+    .footer__wrap
+    {
+        // background: $color--light-grey;
+        .footer__contain
+            {
+                h6 
+                {
+                    color: $color--whitesmoke;
+                }
+                p 
+                {
+                    color: $color--whitesmoke;
+                }
+            }
+        .footer__contain.footer__contain__trademark
+        {
+            a 
+            {
+                font-weight: 500;
+                color: $color--red !important;
+                transition: 0.3s;
+                &:hover
+                {
+                    color: $color--whitesmoke !important;
+                }
+            }
+        }   
+        .footer__contain.footer__contain__product
+        {
+            a 
+            {
+                font-weight: 500;
+                color: $color--red !important;
+                transition: 0.3s;
+                &:hover
+                {
+                    color: $color--whitesmoke !important;
+                }
+            }
+        }   
+        hr 
+        {
+            border: 1px solid $color--whitesmoke;
+        }
+        .footer__bottom__wrap
+        {
+            background: $color--dark-grey;
+            p 
+            {
+                color: $color--whitesmoke;
+            }
+            .fa-facebook-f,
+            .fa-twitter, 
+            .fa-google-plus-g,
+            .fa-linkedin-in
+            {
+                cursor: pointer;
+                color: $color--whitesmoke;
+                transition: 0.3s;
+                &:hover 
+                {
+                    transform: scale(1.1);
+                    color: $color--red;
+                }
+            }
+        }
+    }
+}
+/*RESPONSIVE*/ 
+// @media only screen and (min-width: 1000px) and (max-width: 1100px)
+// {
+//     footer 
+//     {
+//         position: fixed;
+//         bottom: 0;
+//         width: 100%;
+//         .footer__contain
+//         {
+//             text-align: center;
+//         }
+//     }
+// }

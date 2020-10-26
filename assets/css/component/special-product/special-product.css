@@ -1,0 +1,68 @@
+.special-product {
+  padding: 0; }
+  .special-product .item {
+    margin-bottom: 10px; }
+  .special-product .owl-carousel .owl-dots {
+    display: none; }
+  .special-product .owl-carousel .owl-nav {
+    margin: 0;
+    display: block !important; }
+    .special-product .owl-carousel .owl-nav .owl-prev {
+      position: absolute;
+      top: 15%;
+      left: 20px;
+      width: 40px;
+      height: 150px;
+      font-size: 50px;
+      background: transparent !important;
+      background: rgba(196, 196, 196, 0.3) !important;
+      border: none !important; }
+      .special-product .owl-carousel .owl-nav .owl-prev:visited {
+        border: none !important;
+        outline: none !important; }
+      .special-product .owl-carousel .owl-nav .owl-prev span {
+        color: whitesmoke; }
+    .special-product .owl-carousel .owl-nav .owl-next {
+      position: absolute;
+      top: 15%;
+      right: 20px;
+      width: 40px;
+      height: 150px;
+      font-size: 50px;
+      background: transparent !important;
+      background: rgba(196, 196, 196, 0.3) !important;
+      border: none !important; }
+      .special-product .owl-carousel .owl-nav .owl-next:active {
+        border: none !important;
+        outline: none !important; }
+      .special-product .owl-carousel .owl-nav .owl-next span {
+        color: whitesmoke; }
+
+.special-product .card {
+  border: none;
+  height: 215px;
+  margin: 10px 0;
+  background: transparent; }
+  .special-product .card img {
+    padding: 0;
+    height: 170px;
+    background-size: cover;
+    border-radius: 20px;
+    transition: 0.3s; }
+    .special-product .card img:hover {
+      transform: translate(0px, -10px); }
+  .special-product .card .card-body {
+    padding: 0; }
+    .special-product .card .card-body h3 {
+      font-size: 16px;
+      margin-bottom: 5px;
+      color: #f2f2f2; }
+    .special-product .card .card-body p {
+      font-size: 12px;
+      margin: 0 5px; }
+
+.special-product .special-product__main-module {
+  background: rgba(242, 242, 242, 0.1);
+  padding: 10px 0;
+  margin-bottom: 10px;
+  border-radius: 20px; }

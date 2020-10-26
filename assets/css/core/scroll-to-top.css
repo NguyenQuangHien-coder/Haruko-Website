@@ -1,0 +1,36 @@
+/* SCROLL TO TOP ----------------------------------------------------------------------------*/
+.scroll-top {
+  position: fixed;
+  z-index: 1001;
+  width: 50px;
+  height: 50px;
+  background: #D32F2F;
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: #e0e0e0;
+  font-size: 22px;
+  border-radius: 100%;
+  opacity: 80%;
+  transition: 0.3s;
+  visibility: hidden;
+  opacity: 0;
+  transform: rotate(45deg);
+  opacity: 50% !important; }
+
+.scroll-top.scroll-top-sticky {
+  visibility: visible;
+  opacity: 1; }
+
+.scroll-top:hover {
+  background: #e2192d;
+  transform: scale(1.05);
+  opacity: 80% !important; }
+  .scroll-top:hover a {
+    color: whitesmoke; }
+
+.scroll-top-icon {
+  color: white;
+  cursor: url(img/mouse-pointer.png), pointer; }

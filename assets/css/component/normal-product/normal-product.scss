@@ -1,0 +1,104 @@
+$color--white: #ffffff;
+$color--whitesmoke: #f2f2f2;
+$color--siver: #e0e0e0;
+$color--light-grey: #374046;
+$color--dark-grey: #171c24;
+$color--soft-black: #141414;
+$color--red: #D32F2F;
+    
+/*MAIN-PRODUCT*/
+.normal-product.main-module
+{
+    background: rgba($color: $color--siver, $alpha: 1);
+}
+.normal-product
+{
+    .product {
+        font-size: 16px;
+        width: 200px;
+        height: 30px;
+        padding-left: 10px;
+        color: whitesmoke;
+        background: $color--light-grey;
+        border-right: 12px solid #ffffff;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        display: flex;
+        align-items: center;
+    }
+}
+.normal-product
+{
+    .container__item {
+        padding: 0;
+        .card {
+            margin: 10px;
+            border: none;
+            background: transparent;
+            &:hover {
+                // box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+            }
+            img {
+                height: 208px;
+                transition: 0.3s;
+                &:hover
+                {
+                    transform: translate(0 , -10px);
+                }
+            }
+            .card-body {
+                height: 80px;
+                padding: 0 0 5px 0;
+                p {
+                    position: absolute;
+                    bottom: 10px;
+                    left: 0;
+                    margin: 0;
+                }
+            }
+        }
+        h3 {
+            font-size: 16px;
+            color: black;
+            margin-left: 2px !important;
+           
+        }
+        p {
+            color: #d32d2d;
+            font-weight: 500;
+            margin-left: 2px !important;
+           
+        }
+    }
+}
+/*RESPONSIVE*/
+@media only screen and (max-width: 576px)
+{
+    .normal-product
+    {
+        img 
+        {
+            height: 340px !important;
+        }
+    }
+}
+@media only screen and (min-width: 768px)
+{
+    .normal-product
+    {
+        img 
+        {
+            height: 160px !important;
+        }
+    }
+}
+@media only screen and (min-width: 992px)
+{
+    .normal-product
+    {
+        img 
+        {
+            height: 209px !important;
+        }
+    }
+}
